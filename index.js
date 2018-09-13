@@ -1,5 +1,6 @@
 const request = require('request-promise-native'),
   fs = require('fs'),
+  papaparse = require('papaparse'),
   variables = require('./variables.json');
 
 async function init(){
@@ -35,6 +36,30 @@ async function init(){
     })
     data.push(exportRow);
   })
+  
+  // Get urban index
+  const urban_rural = await new Promise((complete, err) => {
+    papaparse.parse(fs.createReadStream('./data/County_Rural_Lookup.csv'), {
+      header: true,
+      worker: false,
+      complete,
+      error: err
+    });
+  }).then((results) => {
+    return results.data
+  })
+  
+  data = data.map((d) => {
+    const urbanity = urban_rural.find((f) => f['2015 GEOID'] === d.STATE + d.COUNTY);
+    if (urbanity) {
+      d['Percent urban'] = +urbanity['2010 Census \rPercent Rural'];
+    } else {
+      d['Percent urban'] = null;
+    }
+    
+    return d;
+  });
+  
   fs.writeFileSync('export.json', JSON.stringify(data));
 };
 init();
