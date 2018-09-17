@@ -1,0 +1,36 @@
+[
+  {
+    "type": "getQuartile",
+    "simpleName": "Median household income"
+  },
+  {
+    "type": "makeRate",
+    "simpleName": "White non-Hispanic",
+    "denominator": "Total population",
+    "rateName": "Percent white non-Hispanic"
+  },
+  {
+    "type": "addTo",
+    "simpleName": "Manufacturing employment",
+    "addTo": ["Agriculture + mining employment"],
+    "newName": "Manufacturing, agriculture, and mining employment"
+  },
+  {
+    "type": "makeRate",
+    "simpleName": "Manufacturing, agriculture, and mining employment",
+    "denominator": "Total employment",
+    "rateName": "Percent employed in manufacturing, agriculture, and mining"
+  },
+  {
+    "type": "getQuartile",
+    "simpleName": "Percent white non-Hispanic"
+  },
+  {
+    "type": "getQuartile",
+    "simpleName": "Percent employed in manufacturing, agriculture, and mining"
+  },
+  {
+    "type": "getQuartile",
+    "simpleName": "Percent urban"
+  }
+]

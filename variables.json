@@ -1,27 +1,30 @@
-[
-  {
-    "name": "Median household income in the past 12 months (in 2016 Inflation-adjusted dollars)", 
-    "simpleName": "Median household income",
-    "id": "B19013_001E"
-  },
-  {
-    "name": "Not Hispanic or Latino — White alone", 
-    "simpleName": "White non-Hispanic",
-    "id": "B03002_003E"
-  },
-  {
-    "name": "Industry by Occupation for the Civilian Employed Population 16 Years and Over: Manufacturing",
-    "simpleName": "Manufacturing employment",
-    "id": "C24050_004E"
-  },
-  {
-    "name": "Industry by Class of Worker for the Civilian Employed Population 16 Years and Over: Total",
-    "simpleName": "Total employment",
-    "id": "C24070_001E"
-  },
-  {
-    "name": "Industry by Class of Worker for the Civilian Employed Population 16 Years and Over: Agriculture, forestry, fishing and hunting, and mining",
-    "simpleName": "Agriculture + mining employment",
-    "id": "C24070_002E"
-  }
+[{
+		"name": "Median household income in the past 12 months (in 2016 Inflation-adjusted dollars)",
+		"simpleName": "Median household income",
+		"id": "B19013_001E"
+	},
+	{
+		"simpleName": "Total population",
+		"id": "B03002_001E"
+	},
+	{
+		"name": "Not Hispanic or Latino — White alone",
+		"simpleName": "White non-Hispanic",
+		"id": "B03002_003E"
+	},
+	{
+		"name": "Industry by Occupation for the Civilian Employed Population 16 Years and Over: Manufacturing",
+		"simpleName": "Manufacturing employment",
+		"id": "C24050_004E"
+	},
+	{
+		"name": "Industry by Class of Worker for the Civilian Employed Population 16 Years and Over: Total",
+		"simpleName": "Total employment",
+		"id": "C24070_001E"
+	},
+	{
+		"name": "Industry by Class of Worker for the Civilian Employed Population 16 Years and Over: Agriculture, forestry, fishing and hunting, and mining",
+		"simpleName": "Agriculture + mining employment",
+		"id": "C24070_002E"
+	}
 ]
