@@ -21,10 +21,5 @@
 		"name": "Industry by Class of Worker for the Civilian Employed Population 16 Years and Over: Total",
 		"simpleName": "Total employment",
 		"id": "C24070_001E"
-	},
-	{
-		"name": "Industry by Class of Worker for the Civilian Employed Population 16 Years and Over: Agriculture, forestry, fishing and hunting, and mining",
-		"simpleName": "Agriculture + mining employment",
-		"id": "C24070_002E"
-	}
+  }
 ]

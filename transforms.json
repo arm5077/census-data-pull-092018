@@ -10,16 +10,10 @@
     "rateName": "Percent white non-Hispanic"
   },
   {
-    "type": "addTo",
-    "simpleName": "Manufacturing employment",
-    "addTo": ["Agriculture + mining employment"],
-    "newName": "Manufacturing, agriculture, and mining employment"
-  },
-  {
     "type": "makeRate",
-    "simpleName": "Manufacturing, agriculture, and mining employment",
+    "simpleName": "Manufacturing employment",
     "denominator": "Total employment",
-    "rateName": "Percent employed in manufacturing, agriculture, and mining"
+    "rateName": "Percent employed in manufacturing"
   },
   {
     "type": "getQuartile",
